@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link - 小山悠 YU OYAMA</title>
+    <meta name="description" content="俳優・小山悠のリンク集">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            background: #ffffff;
+            color: #000000;
+            line-height: 1.4;
+            font-weight: 300;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px 40px;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            padding-right: 80px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 500;
+            color: #000;
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            opacity: 0.6;
+        }
+
+        .nav-menu a.active {
+            opacity: 0.6;
+        }
+
+        /* Social Icons */
+        .social-icons {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icon {
+            width: 20px;
+            height: 20px;
+            display: block;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-icon:hover {
+            opacity: 1;
+        }
+
+        .social-icon svg {
+            width: 100%;
+            height: 100%;
+            fill: #000;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-top: 80px;
+            padding: 80px 40px;
+            background: #ffffff;
+            text-align: center;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 60px;
+            letter-spacing: 3px;
+            color: #000;
+        }
+
+        .contact-section {
+            margin-bottom: 80px;
+            text-align: center;
+        }
+
+        .contact-text {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .contact-button {
+            display: inline-block;
+            padding: 15px 40px;
+            border: 1px solid #000;
+            color: #000;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        .affiliate-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .affiliate-link {
+            padding: 40px 30px;
+            border: 1px solid #e0e0e0;
+            text-decoration: none;
+            color: #000;
+            transition: all 0.3s ease;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .affiliate-link:hover {
+            background: #f8f8f8;
+            border-color: #ccc;
+        }
+
+        .affiliate-title {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .affiliate-subtitle {
+            font-size: 12px;
+            color: #666;
+            font-weight: 300;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 40px;
+            background: #ffffff;
+            text-align: center;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .footer p {
+            font-size: 12px;
+            color: #999;
+            font-weight: 300;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .header {
+                padding: 15px 20px;
+            }
+
+            .nav-menu {
+                gap: 15px;
+                font-size: 11px;
+            }
+
+            .main-content {
+                padding: 60px 20px;
+            }
+
+            .nav-container {
+                padding-right: 0;
+            }
+
+            .social-icons {
+                position: static;
+                transform: none;
+                justify-content: center;
+                margin-top: 10px;
+            }
+
+            .affiliate-links {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">YU OYAMA</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="profile.html">PROFILE</a></li>
+                    <li><a href="biography.html">BIOGRAPHY</a></li>
+                    <li><a href="link.html" class="active">LINK</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/oyama.yuu" target="_blank" class="social-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+                <a href="https://x.com/oyamayu1111" target="_blank" class="social-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="contact-container">
+            <h2 class="section-title">LINK</h2>
+            
+            <div class="contact-section">
+                <h3 style="font-size: 16px; font-weight: 500; margin-bottom: 20px; letter-spacing: 1px;">CONTACT</h3>
+                <p class="contact-text">
+                    お仕事のご依頼・お問い合わせは<br>
+                    Instagramのメッセージよりお気軽にご連絡ください
+                </p>
+                <a href="https://www.instagram.com/oyama.yuu" target="_blank" class="contact-button">
+                    Instagram
+                </a>
+            </div>
+
+            <div class="affiliate-links">
+                <a href="https://kakukakushikajika.net/oyama_yu/" target="_blank" class="affiliate-link">
+                    <div class="affiliate-title">劇団 斯々然々。</div>
+                    <div class="affiliate-subtitle">Theatre Company</div>
+                </a>
+                <a href="https://www.j-clip.co.jp/actor/oyama-yuu/" target="_blank" class="affiliate-link">
+                    <div class="affiliate-title">J.CLIP</div>
+                    <div class="affiliate-subtitle">Management Office</div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Yu Oyama. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Header background opacity on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>
