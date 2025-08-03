@@ -115,6 +115,8 @@
         .biography-container {
             max-width: 800px;
             margin: 0 auto;
+            width: 100%;
+            overflow-x: hidden;
         }
 
         .section-title {
@@ -142,6 +144,8 @@
         .work-list {
             list-style: none;
             margin-bottom: 40px;
+            width: 100%;
+            overflow-x: hidden;
         }
 
         .work-item {
@@ -216,12 +220,26 @@
 
             .work-item {
                 flex-direction: column;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
             }
 
             .work-year {
                 margin-right: 0;
                 margin-bottom: 5px;
                 min-width: auto;
+            }
+
+            .work-title {
+                margin-bottom: 3px;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+            }
+
+            .work-role {
+                margin-left: 0;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
             }
         }
     </style>
