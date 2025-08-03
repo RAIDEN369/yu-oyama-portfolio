@@ -215,24 +215,28 @@
                 padding: 15px 20px;
             }
 
-            .nav-menu {
-                gap: 15px;
-                font-size: 11px;
-            }
-
-            .main-content {
-                padding: 60px 20px;
-            }
-
             .nav-container {
+                flex-direction: column;
+                gap: 15px;
                 padding-right: 0;
+            }
+
+            .nav-menu {
+                gap: 20px;
+                font-size: 12px;
+                order: 1;
             }
 
             .social-icons {
                 position: static;
                 transform: none;
                 justify-content: center;
-                margin-top: 10px;
+                order: 2;
+                margin-top: 0;
+            }
+
+            .main-content {
+                padding: 60px 20px;
             }
 
             .affiliate-links {

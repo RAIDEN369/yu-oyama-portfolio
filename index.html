@@ -188,20 +188,24 @@
                 padding: 15px 20px;
             }
 
-            .nav-menu {
+            .nav-container {
+                flex-direction: column;
                 gap: 15px;
-                font-size: 11px;
+                padding-right: 0;
             }
 
-            .nav-container {
-                padding-right: 0;
+            .nav-menu {
+                gap: 20px;
+                font-size: 12px;
+                order: 1;
             }
 
             .social-icons {
                 position: static;
                 transform: none;
                 justify-content: center;
-                margin-top: 10px;
+                order: 2;
+                margin-top: 0;
             }
 
             .hero-title {
